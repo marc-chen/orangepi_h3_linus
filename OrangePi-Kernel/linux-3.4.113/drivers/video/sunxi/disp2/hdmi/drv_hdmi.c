@@ -290,6 +290,7 @@ static struct disp_hdmi_mode hdmi_mode_tbl[] = {
 	{DISP_TV_MOD_1360_768P,           HDMI1360_768P,     },
 	{DISP_TV_MOD_1440_900P,           HDMI1440_900P,     },
 	{DISP_TV_MOD_1680_1050P,          HDMI1680_1050P,    },
+	{DISP_TV_MOD_1440_2560P_48HZ,     HDMI_1440_2560_48,    },
 };
 
 __u32 Hdmi_get_vic(u32 mode)

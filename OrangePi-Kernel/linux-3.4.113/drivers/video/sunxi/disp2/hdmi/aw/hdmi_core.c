@@ -25,7 +25,7 @@ __u32   hdmi_hpd_mask = 0x00;//0x10: force unplug; 0x11: force plug
 
 disp_video_timings video_timing[] =
 {
-	//VIC				   PCLK    AVI_PR  X      Y      HT      HBP   HFP   HST    VT     VBP  VFP  VST h_pol v_pol int vac   trd
+	//                 VIC PCLK     AVI_PR X     Y      HT     HBP   HFP   HST  VT     VBP  VFP VST h_pol v_pol int vac trd
 	{HDMI1440_480I,      0,13500000,  1,  720,   480,   858,   57,   19,   62,  525,   15,  4,  3,  0,   0,   1,   0,   0},
 	{HDMI1440_576I,      0,13500000,  1,  720,   576,   864,   69,   12,   63,  625,   19,  2,  3,  0,   0,   1,   0,   0},
 	{HDMI480P,           0,27000000,  0,  720,   480,   858,   60,   16,   62,  525,   30,  9,  6,  0,   0,   0,   0,   0},
@@ -50,6 +50,8 @@ disp_video_timings video_timing[] =
 	{HDMI1360_768P,      0,85500000,  0,  1360,   768,  1792,  256,   64, 112,   805,  17,  3, 17,  0,   0,   0,    0,  0},
 	{HDMI1440_900P,      0,108000000, 0,  1440,   900,  1848,  248,   48, 112,   942,  38,  1,  3,  1,   1,   0,    0,  0},
 	{HDMI1680_1050P,     0,147000000, 0,  1680,  1050,  2256,  288,  104, 184,  1087,  33,  1,  3,  1,   1,   0,    0,  0},
+	//                 VIC PCLK     AVI_PR X     Y      HT     HBP   HFP   HST  VT     VBP  VFP VST h_pol v_pol int vac trd
+	{HDMI_1440_2560_48,  0,198378000, 0,  1440,  2560,  1545,  35,    60,  10,  2560,  3,   4,  1,  0,   0,   0,    0,  0},
 	{ HDMI_EDID, },
 };
 
