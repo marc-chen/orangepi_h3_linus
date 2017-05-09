@@ -225,15 +225,15 @@ static __s32 Parse_DTD_Block(__u8 *pbuf)
 		if ((sizex== 1920) && (sizey == 1080)) {
 			Device_Support_VIC[HDMI1080P_50] = 1;
 		}
+
+		if ((sizex== 1440) && (sizey == 2560)) {
+			Device_Support_VIC[HDMI_1440_2560_50] = 1;
+		}
+
 	}
 	else if ((frame_rate == 23) || (frame_rate == 24)) {
 		if ((sizex== 1920) && (sizey == 1080)) {
 			Device_Support_VIC[HDMI1080P_24] = 1;
-		}
-	}
-	else if (frame_rate == 48) {
-		if ((sizex== 1440) && (sizey == 2560)) {
-			Device_Support_VIC[HDMI_1440_2560_48] = 1;
 		}
 	}
 	__inf("PCLK=%d\tXsize=%d\tYsize=%d\tFrame_rate=%d\n",

@@ -764,7 +764,7 @@ s32 bsp_disp_get_screen_width_from_output_type(u32 screen_id, u32 output_type, u
 			width = 1680;
 			height = 1050;			
 			break;
-                case DISP_TV_MOD_1440_2560P_48HZ:
+                case DISP_TV_MOD_1440_2560P_50HZ:
                         width = 1440;
                         height = 2560;
                         break;
@@ -846,7 +846,7 @@ s32 bsp_disp_get_screen_height_from_output_type(u32 screen_id, u32 output_type, 
 			width = 1680;
 			height = 1050;			
 			break;
-                case DISP_TV_MOD_1440_2560P_48HZ:
+                case DISP_TV_MOD_1440_2560P_50HZ:
                         width = 1440;
                         height = 2560;
                         break;
